@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+import time
 import json
 import os
 
@@ -101,6 +102,7 @@ else:
             save(st.session_state["users"], DATA_FILE)
             st.balloons()
             st.success("Task completed! Credits added to your balance.")
+            time.sleep(2)
             st.rerun()
         elif st.button("Re-roll Task"):
             result = roll_event(curse_chance=0.2)
