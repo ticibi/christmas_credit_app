@@ -60,6 +60,7 @@ if "logged_in" not in st.session_state:
 
 if not st.session_state["logged_in"]:
     st.title("Login")
+    st.snow()
     username = st.text_input("Username")
     if st.button("Login"):
         login(username)
