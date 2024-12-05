@@ -110,10 +110,6 @@ else:
                     st.write(f"Your task is: \n{current_user['task']['name']}")
                     st.write(f"{current_user['task']['description']}")
                     st.write(f"Reward: {current_user['task']['reward']} Christmas Credits")
-            else:
-                st.write(f"Your task is: \n{current_user['task']['name']}")
-                st.write(f"{current_user['task']['description']}")
-                st.write(f"Reward: {current_user['task']['reward']} Christmas Credits")
             
             if current_user.get('task'):
                 if st.button("Re-roll Task"):
