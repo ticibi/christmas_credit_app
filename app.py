@@ -103,6 +103,7 @@ else:
 
         with task:
             current_user = st.session_state['users'][st.session_state['username']]
+            
             if not current_user.get('task'):
                 if st.button("Get Task"):
                     current_user['task'] = random.choice(st.session_state['tasks'])
@@ -112,12 +113,12 @@ else:
                     st.write(f"Reward: {current_user['task']['reward']} Christmas Credits")
             
             if current_user.get('task'):
+                st.write(f"Your task is: \n{current_user['task']['name']}")
+                st.write(f"{current_user['task']['description']}")
+                st.write(f"Reward: {current_user['task']['reward']} Christmas Credits")
                 if st.button("Re-roll Task"):
                     current_user['task'] = random.choice(st.session_state['tasks'])
                     save(st.session_state['users'], DATA_FILE)
-                    st.write(f"Your task is: \n{current_user['task']['name']}")
-                    st.write(f"{current_user['task']['description']}")
-                    st.write(f"Reward: {current_user['task']['reward']} Christmas Credits")
 
         with account:
             st.write(f"You have {current_user['balance']} Christmas Credits")
