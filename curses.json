@@ -1,0 +1,48 @@
+[
+    {
+      "name": "Jazz Hands Jingle",
+      "curse": "Do jazz hands everywhere you walk."
+    },
+    {
+      "name": "Rhyme Time Bind",
+      "curse": "Everything you say must end in a rhyme."
+    },
+    {
+      "name": "Alliteration Affliction",
+      "curse": "Speak in alliteration."
+    },
+    {
+      "name": "Ho Ho Hysteria",
+      "curse": "End every sentence with 'Ho Ho Ho.'"
+    },
+    {
+      "name": "Object Obligation",
+      "curse": "Carry around an [object] until cured."
+    },
+    {
+      "name": "Sing-Song Suffering",
+      "curse": "Sing everything you say.",
+      "cure": "Perform a Christmas carol for the group."
+    },
+    {
+      "name": "Meow Malediction",
+      "curse": "Make only cat sounds until cured."
+    },
+    {
+      "name": "Mini-Step Madness",
+      "curse": "Walk only in tiny steps until cured."
+    },
+    {
+      "name": "Laugh Loud Lament",
+      "curse": "Laugh loudly after everything someone says."
+    },
+    {
+      "name": "Toy Soldier Trial",
+      "curse": "Walk stiff like a toy soldier until cured."
+    },
+    {
+      "name": "Silent Night Spell",
+      "curse": "Don’t speak until cured."
+    }
+  ]
+  
