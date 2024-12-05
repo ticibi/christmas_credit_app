@@ -1,53 +1,27 @@
 {
     "tcb": {
-        "balance": 42,
+        "balance": 3,
         "stats": {
-            "tasks_received": 1
-        }
-    },
-    "mike": {
-        "balance": 0,
-        "task": {
-            "name": "RPS Champ",
-            "description": "Secretly win five rounds of rock-paper-scissors against different guests.",
-            "reward": "3",
-            "time_limit": "Entire Party",
-            "difficulty": "hard"
-        }
-    },
-    "layla": {
-        "balance": 0,
-        "task": {
-            "name": "Holiday High-Five",
-            "description": "Get three different people to high-five you.",
-            "reward": "1 Christmas Credit",
-            "time_limit": "15 minutes",
-            "difficulty": "easy"
-        }
-    },
-    "asdas": {
-        "balance": 0,
-        "curse": {
-            "name": "Silent Night Spell",
-            "curse": "Don\u00e2\u20ac\u2122t speak until cured."
+            "tasks_received": 0,
+            "tasks_completed": 0,
+            "tasks_rerolled": 0,
+            "curses_received": 0,
+            "curses_broken": 0
         }
     },
     "santaadmin": {
-        "balance": 0,
+        "balance": 1,
+        "stats": {
+            "tasks_received": 1,
+            "tasks_completed": 0,
+            "tasks_rerolled": 0,
+            "curses_received": 0,
+            "curses_broken": 0
+        },
         "task": {
-            "name": "Secretly Switch",
-            "description": "Switch drinks with another guest and finish theirs before they notice.",
+            "name": "Token Collecting",
+            "description": "Gather four red items from other guests without revealing why you need them.",
             "reward": "3",
-            "time_limit": "20 minutes",
-            "difficulty": "hard"
-        }
-    },
-    "santadamin": {
-        "balance": 0,
-        "task": {
-            "name": "Lost Item",
-            "description": "Pretend to lose something and enlist 2 people to help find it without explaining why.",
-            "reward": "2",
             "time_limit": "20 minutes",
             "difficulty": "hard"
         }

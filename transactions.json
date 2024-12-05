@@ -38,5 +38,10 @@
         "user": "tcb",
         "amount": 3,
         "balance": 17
+    },
+    {
+        "user": "tcb",
+        "amount": 100,
+        "balance": 145
     }
 ]

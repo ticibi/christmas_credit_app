@@ -8,6 +8,23 @@
         "difficulty": "easy"
       },
       {
+        "name": "Santa Hat Heist",
+        "description": "Acquire another guest’s Santa hat without directly asking for it.",
+        "reward": "3",
+        "time_limit": "NA",
+        "difficulty": "easy"
+      },
+      {
+        "name": "Frozen in Place",
+        "description": "Whenever someone says a specific word (e.g., “holiday,” “tree,” or “cheer”), you must freeze in place and can only say, “I’m frozen!” You can only be unfrozen by a specific guest or if someone offers you a specific item.",
+        "reward": "3",
+        "time_limit": "NA",
+        "difficulty": "easy",
+        "word": true,
+        "item": true,
+        "person": true
+      },
+      {
         "name": "Christmas Kiss",
         "description": "Blow a kiss to 5 guests.",
         "reward": "1",

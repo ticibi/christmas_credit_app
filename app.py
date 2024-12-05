@@ -49,7 +49,14 @@ def login(username):
     admin_username = st.secrets.get("admin", {}).get("username", "admin")
     if username:
         if username not in st.session_state["users"]:
-            st.session_state["users"][username] = {"balance": 0, "stats": {}}
+            st.session_state["users"][username] = {"balance": 0, "stats": {
+                "tasks_received": 0,
+                "tasks_completed": 0,
+                "tasks_rerolled": 0,
+                "curses_received": 0,
+                "curses_broken": 0,
+            }}
+            save(st.session_state["users"], DATA_FILE)
         st.session_state["logged_in"] = True
         st.session_state["username"] = username
         st.session_state["is_admin"] = username == admin_username
@@ -79,11 +86,13 @@ else:
         if st.button("Roll for Task or Curse"):
             result = roll_event(curse_chance=0.2)
             if result["type"] == "curse":
+                current_user["stats"]["curses_received"] += 1 #stats
                 current_user["curse"] = result["event"]
                 st.error(f"🔮 You've been cursed: {result['event']['name']}")
                 with st.expander("Curse Details", expanded=True):
                     st.write(result['event']['curse'])
             else:
+                current_user["stats"]["tasks_received"] += 1 #stats
                 current_user["task"] = result["event"]
                 st.success(f"🎯 New Task: {result['event']['name']}")
                 with st.expander("Task Details", expanded=True):
@@ -98,6 +107,7 @@ else:
             st.write(current_user['task']['description'])
             st.write(f"Reward: {current_user['task']['reward']} Christmas Credits")
         if st.button("Complete Task"):
+            current_user["stats"]["tasks_completed"] += 1 #stats
             current_user["balance"] += int(current_user["task"]["reward"])
             del current_user["task"]
             save(st.session_state["users"], DATA_FILE)
@@ -107,13 +117,16 @@ else:
             st.rerun()
         elif st.button("Re-roll Task"):
             result = roll_event(curse_chance=0.2)
+            current_user["stats"]["tasks_rerolled"] += 1 #stats
             if result["type"] == "curse":
+                current_user["stats"]["curses_received"] += 1 #stats
                 current_user["curse"] = result["event"]
                 del current_user["task"]
                 st.error(f"🔮 You've been cursed: {result['event']['name']}")
                 with st.expander("Curse Details", expanded=True):
                     st.write(result['event']['curse'])
             else:
+                current_user["stats"]["tasks_received"] += 1 #stats
                 current_user["task"] = result["event"]
                 st.success(f"🎯 New Task: {result['event']['name']}")
                 with st.expander("Task Details", expanded=True):
@@ -127,6 +140,7 @@ else:
         with st.expander("Curse Details", expanded=True):
             st.write(current_user['curse']['curse'])
         if st.button("Break Curse"):
+            current_user["stats"]["curses_broken"] += 1 #stats
             del current_user["curse"]
             save(st.session_state["users"], DATA_FILE)
             st.success("Curse broken! You can roll again.")
@@ -135,7 +149,7 @@ else:
     # Admin Panel
     if st.session_state["is_admin"]:
         st.sidebar.title("Admin Panel")
-        admin_action = st.sidebar.radio("Admin Actions", ["Transactions", "Manage Tasks"])
+        admin_action = st.sidebar.radio("Admin Actions", ["Transactions", "Manage Tasks", "User Overview"])
 
         # Transactions Management
         if admin_action == "Transactions":
@@ -233,3 +247,48 @@ else:
                                 st.success(f"Task '{updated_task_name}' updated successfully!")
                             else:
                                 st.error("Please fill out all fields to update the task.")
+
+        # User Overview
+        elif admin_action == "User Overview":
+            st.header("User Overview")
+            
+            for user, user_data in st.session_state["users"].items():
+                with st.expander(f"User: {user}"):
+                    st.write(f"**Balance:** {user_data.get('balance', 0)} Christmas Credits")
+                    
+                    # Display current task or curse
+                    if user_data.get("task"):
+                        st.write(f"**Current Task:** {user_data['task']['name']}")
+                        st.write(f"**Task Description:** {user_data['task']['description']}")
+                    elif user_data.get("curse"):
+                        st.write(f"**Current Curse:** {user_data['curse']['name']}")
+                        st.write(f"**Curse Description:** {user_data['curse']['curse']}")
+                    else:
+                        st.write("No active task or curse.")
+
+                    # Display statistics
+                    stats = user_data.get("stats", {
+                        "tasks_received": 0,
+                        "tasks_completed": 0,
+                        "tasks_rerolled": 0,
+                        "curses_received": 0,
+                        "curses_broken": 0,
+                    })
+                    st.write(f"**Tasks Received:** {stats['tasks_received']}")
+                    st.write(f"**Tasks Completed:** {stats['tasks_completed']}")
+                    st.write(f"**Tasks Rerolled:** {stats['tasks_rerolled']}")
+                    st.write(f"**Curses Received:** {stats['curses_received']}")
+                    st.write(f"**Curses Broken:** {stats['curses_broken']}")
+
+                    # Button to reset stats
+                    if st.button(f"Reset Stats for {user}", key=f"reset_stats_{user}"):
+                        user_data["stats"] = {
+                            "tasks_received": 0,
+                            "tasks_completed": 0,
+                            "tasks_rerolled": 0,
+                            "curses_received": 0,
+                            "curses_broken": 0,
+                        }
+                        save(st.session_state["users"], DATA_FILE)
+                        st.success(f"Stats for {user} have been reset.")
+                        st.rerun()
