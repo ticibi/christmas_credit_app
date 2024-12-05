@@ -1,1 +1,42 @@
-[{"user": "mike", "amount": 1, "balance": 1}, {"user": "mike", "amount": 1, "balance": 2}, {"user": "mike", "amount": 1, "balance": 3}, {"user": "mike", "amount": 6, "balance": 9}, {"user": "tcb", "amount": 1, "balance": 1}, {"user": "tcb", "amount": 11, "balance": 12}]
+[
+    {
+        "user": "mike",
+        "amount": 1,
+        "balance": 1
+    },
+    {
+        "user": "mike",
+        "amount": 1,
+        "balance": 2
+    },
+    {
+        "user": "mike",
+        "amount": 1,
+        "balance": 3
+    },
+    {
+        "user": "mike",
+        "amount": 6,
+        "balance": 9
+    },
+    {
+        "user": "tcb",
+        "amount": 1,
+        "balance": 1
+    },
+    {
+        "user": "tcb",
+        "amount": 11,
+        "balance": 12
+    },
+    {
+        "user": "tcb",
+        "amount": 2,
+        "balance": 14
+    },
+    {
+        "user": "tcb",
+        "amount": 3,
+        "balance": 17
+    }
+]

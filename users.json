@@ -1,12 +1,8 @@
 {
     "tcb": {
-        "balance": 12,
-        "task": {
-            "name": "Lost Item",
-            "description": "Pretend to lose something and enlist 2 people to help find it without explaining why.",
-            "reward": "2",
-            "time_limit": "20 minutes",
-            "difficulty": "hard"
+        "balance": 40,
+        "stats": {
+            "tasks_received": 1
         }
     },
     "mike": {
@@ -27,6 +23,33 @@
             "reward": "1 Christmas Credit",
             "time_limit": "15 minutes",
             "difficulty": "easy"
+        }
+    },
+    "asdas": {
+        "balance": 0,
+        "curse": {
+            "name": "Silent Night Spell",
+            "curse": "Don\u00e2\u20ac\u2122t speak until cured."
+        }
+    },
+    "santaadmin": {
+        "balance": 0,
+        "task": {
+            "name": "Secretly Switch",
+            "description": "Switch drinks with another guest and finish theirs before they notice.",
+            "reward": "3",
+            "time_limit": "20 minutes",
+            "difficulty": "hard"
+        }
+    },
+    "santadamin": {
+        "balance": 0,
+        "task": {
+            "name": "Lost Item",
+            "description": "Pretend to lose something and enlist 2 people to help find it without explaining why.",
+            "reward": "2",
+            "time_limit": "20 minutes",
+            "difficulty": "hard"
         }
     }
 }
