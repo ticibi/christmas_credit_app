@@ -15,7 +15,7 @@ st.set_page_config(page_title=TITLE, page_icon="🎄", layout="wide")
 # Helper function to load data from JSON
 def load(file):
     if os.path.exists(file):
-        with open(file, "r") as f:
+        with open(file, "r", encoding="utf-8") as f:  # Specify UTF-8 encoding
             return json.load(f)
     return {}
 

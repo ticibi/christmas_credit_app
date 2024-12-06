@@ -1,127 +1,146 @@
 {
     "tasks": [
-      {
-        "name": "Holiday High-Five",
-        "description": "Get three different people to high-five you.",
-        "reward": "1",
-        "time_limit": "15 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Santa Hat Heist",
-        "description": "Acquire another guest’s Santa hat without directly asking for it.",
-        "reward": "3",
-        "time_limit": "NA",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Frozen in Place",
-        "description": "Whenever someone says a specific word (e.g., “holiday,” “tree,” or “cheer”), you must freeze in place and can only say, “I’m frozen!” You can only be unfrozen by a specific guest or if someone offers you a specific item.",
-        "reward": "3",
-        "time_limit": "NA",
-        "difficulty": "easy",
-        "word": true,
-        "item": true,
-        "person": true
-      },
-      {
-        "name": "Christmas Kiss",
-        "description": "Blow a kiss to 5 guests.",
-        "reward": "1",
-        "time_limit": "15 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Drink Double",
-        "description": "Get another guest to clink glasses with you and say 'Cheers to Santa.' You may not drink until they also say 'Cheers to Santa.'",
-        "reward": "1",
-        "time_limit": "15 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Three’s a Jingle",
-        "description": "Sing the first X lines of a holiday song out loud. If someone joins in, you must restart the song.",
-        "reward": "1",
-        "time_limit": "15 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Gift Wrap Waddle",
-        "description": "Wrap yourself in a scarf, blanket, or jacket and waddle around like a gift until someone 'unwraps' you.",
-        "reward": "1",
-        "time_limit": "15 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Hug Everyone",
-        "description": "Give 3 guests hugs.",
-        "reward": "1",
-        "time_limit": "15 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Unlikely Duo",
-        "description": "Get two people to sing a holiday jingle with you without explaining why.",
-        "reward": "2",
-        "time_limit": "15 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Merry Mimic",
-        "description": "Copy someone’s movements or gestures until they notice.",
-        "reward": "1",
-        "time_limit": "10 minutes",
-        "difficulty": "easy"
-      },
-      {
-        "name": "Skibidi Rizz",
-        "description": "Make someone say 'Skibidi rizz' without using the phrase yourself.",
-        "reward": "3",
-        "time_limit": "20 minutes",
-        "difficulty": "hard"
-      },
-      {
-        "name": "Secretly Switch",
-        "description": "Switch drinks with another guest and finish theirs before they notice.",
-        "reward": "3",
-        "time_limit": "20 minutes",
-        "difficulty": "hard"
-      },
-      {
-        "name": "Token Collecting",
-        "description": "Gather four red items from other guests without revealing why you need them.",
-        "reward": "3",
-        "time_limit": "20 minutes",
-        "difficulty": "hard"
-      },
-      {
-        "name": "Lost Item",
-        "description": "Pretend to lose something and enlist 2 people to help find it without explaining why.",
-        "reward": "2",
-        "time_limit": "20 minutes",
-        "difficulty": "hard"
-      },
-      {
-        "name": "Freeze Frame",
-        "description": "Stop moving whenever someone says 'Christmas' and don’t resume until someone 'thaws' you.",
-        "reward": "3",
-        "time_limit": "Entire Party",
-        "difficulty": "hard"
-      },
-      {
-        "name": "Christmas Klepto",
-        "description": "Take an ornament off the tree, show it to a random person and say, 'Look what I found!'",
-        "reward": "3",
-        "time_limit": "15 minutes",
-        "difficulty": "hard"
-      },
-      {
-        "name": "RPS Champ",
-        "description": "Secretly win five rounds of rock-paper-scissors against different guests.",
-        "reward": "3",
-        "time_limit": "Entire Party",
-        "difficulty": "hard"
-      }
+        {
+            "name": "Holiday High-Five",
+            "description": "Get three different people to high-five you.",
+            "reward": "1",
+            "time_limit": "15 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Santa Hat Heist",
+            "description": "Acquire another guest\u2019s Santa hat without directly asking for it.",
+            "reward": "3",
+            "time_limit": "NA",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Frozen in Place",
+            "description": "Whenever someone says a specific word (e.g., \u201choliday,\u201d \u201ctree,\u201d or \u201ccheer\u201d), you must freeze in place and can only say, \u201cI\u2019m frozen!\u201d You can only be unfrozen by a specific guest or if someone offers you a specific item.",
+            "reward": "3",
+            "time_limit": "NA",
+            "difficulty": "easy",
+            "word": true,
+            "item": true,
+            "person": true
+        },
+        {
+            "name": "Christmas Kiss",
+            "description": "Blow a kiss to 5 guests.",
+            "reward": "1",
+            "time_limit": "15 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Drink Double",
+            "description": "Get another guest to clink glasses with you and say 'Cheers to Santa.' You may not drink until they also say 'Cheers to Santa.'",
+            "reward": "1",
+            "time_limit": "15 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Three\u2019s a Jingle",
+            "description": "Sing the first X lines of a holiday song out loud. If someone joins in, you must restart the song.",
+            "reward": "1",
+            "time_limit": "15 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Gift Wrap Waddle",
+            "description": "Wrap yourself in a scarf, blanket, or jacket and waddle around like a gift until someone 'unwraps' you.",
+            "reward": "1",
+            "time_limit": "15 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Hug Everyone",
+            "description": "Give 3 guests hugs.",
+            "reward": "1",
+            "time_limit": "15 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Unlikely Duo",
+            "description": "Get two people to sing a holiday jingle with you without explaining why.",
+            "reward": "2",
+            "time_limit": "15 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Merry Mimic",
+            "description": "Copy someone\u2019s movements or gestures until they notice.",
+            "reward": "1",
+            "time_limit": "10 minutes",
+            "difficulty": "easy"
+        },
+        {
+            "name": "Skibidi Rizz",
+            "description": "Make someone say 'Skibidi rizz' without using the phrase yourself.",
+            "reward": "3",
+            "time_limit": "20 minutes",
+            "difficulty": "hard"
+        },
+        {
+            "name": "Secretly Switch",
+            "description": "Switch drinks with another guest and finish theirs before they notice.",
+            "reward": "3",
+            "time_limit": "20 minutes",
+            "difficulty": "hard"
+        },
+        {
+            "name": "Token Collecting",
+            "description": "Gather four red items from other guests without revealing why you need them.",
+            "reward": "3",
+            "time_limit": "20 minutes",
+            "difficulty": "hard"
+        },
+        {
+            "name": "Lost Item",
+            "description": "Pretend to lose something and enlist 2 people to help find it without explaining why.",
+            "reward": "2",
+            "time_limit": "20 minutes",
+            "difficulty": "hard"
+        },
+        {
+            "name": "Freeze Frame",
+            "description": "Stop moving whenever someone says 'Christmas' and don\u2019t resume until someone 'thaws' you.",
+            "reward": "3",
+            "time_limit": "Entire Party",
+            "difficulty": "hard"
+        },
+        {
+            "name": "Christmas Klepto",
+            "description": "Take an ornament off the tree, show it to a random person and say, 'Look what I found!'",
+            "reward": "3",
+            "time_limit": "15 minutes",
+            "difficulty": "hard"
+        },
+        {
+            "name": "RPS Champ",
+            "description": "Secretly win five rounds of rock-paper-scissors against different guests.",
+            "reward": "3",
+            "time_limit": "Entire Party",
+            "difficulty": "hard"
+        },
+        {
+            "name": "Photo Gesture",
+            "description": "Grab [person] to take pictures with you without speaking. Use only hand gestures.",
+            "reward": 8
+        },
+        {
+            "name": "Simple Speaker",
+            "description": "Speak using only 1-syllable words.",
+            "reward": 7
+        },
+        {
+            "name": "Reindeer Recruiter",
+            "description": "Convince someone to give you their best reindeer impression. Bonus points if they act it out.",
+            "reward": 10
+        },
+        {
+            "name": "Colorful Cocktail",
+            "description": "Have someone make you a [cocktail], but you can only describe it using colors. You cannot say anything else. Do not use hand gestures. Bonus points if they make it for you correctly.",
+            "reward": 11
+        }
     ]
-  }
-  
+}

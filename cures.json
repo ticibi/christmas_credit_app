@@ -1,0 +1,22 @@
+[
+    {"cure": "Santa’s Little Helper", "cost": 5, "inventory": 10},
+    {"cure": "Elf Elixir", "cost": 5, "inventory": 10},
+    {"cure": "Rudolph’s Remedy", "cost": 5, "inventory": 10},
+    {"cure": "Frosty’s Freeze", "cost": 5, "inventory": 10},
+    {"cure": "Grinch Juice", "cost": 7, "inventory": 10},
+    {"cure": "Mistletoe Martini", "cost": 8, "inventory": 10},
+    {"cure": "Holiday Spirit", "cost": 10, "inventory": 10},
+    {"cure": "Gingerbread Shot", "cost": 6, "inventory": 10},
+    {"cure": "North Pole Nog", "cost": 7, "inventory": 10},
+    {"cure": "Snowflake Spritz", "cost": 6, "inventory": 10},
+    {"cure": "Candy Cane Crush", "cost": 5, "inventory": 10},
+    {"cure": "Reindeer Fuel", "cost": 9, "inventory": 10},
+    {"cure": "Sleigh Bell Sangria", "cost": 8, "inventory": 10},
+    {"cure": "Yule Mule", "cost": 7, "inventory": 10},
+    {"cure": "Jack Frost", "cost": 6, "inventory": 10},
+    {"cure": "Cocoa Cure", "cost": 7, "inventory": 10},
+    {"cure": "Nutcracker Nectar", "cost": 8, "inventory": 10},
+    {"cure": "Holly Berry Bliss", "cost": 7, "inventory": 10},
+    {"cure": "Silent Nightcap", "cost": 9, "inventory": 10},
+    {"cure": "Blizzard Blitz", "cost": 10, "inventory": 10}
+]
