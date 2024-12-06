@@ -141,6 +141,55 @@
             "name": "Colorful Cocktail",
             "description": "Have someone make you a [cocktail], but you can only describe it using colors. You cannot say anything else. Do not use hand gestures. Bonus points if they make it for you correctly.",
             "reward": 11
-        }
+        },
+        {
+          "name": "Holiday Accent",
+          "description": "Use an exaggerated British accent until someone points it out.",
+          "reward": 10,
+          "time_limit": 10,
+          "difficulty": 3
+      },
+      {
+          "name": "Christmas Spirit Shout",
+          "description": "Anytime someone takes a shot, yell, 'NOW THAT'S CHRISTMAS SPIRIT!'",
+          "reward": 8,
+          "time_limit": 15,
+          "difficulty": 2
+      },
+      {
+          "name": "Nutcracker Nod",
+          "description": "Curtsy whenever you receive or give an item to another guest.",
+          "reward": 12,
+          "time_limit": 10,
+          "difficulty": 3
+      },
+      {
+          "name": "The Merry March",
+          "description": "Take exaggerated steps or a slight skip, as if crossing a large gap, whenever you cross a threshold or doorway.",
+          "reward": 15,
+          "time_limit": 15,
+          "difficulty": 4
+      },
+      {
+          "name": "Drink Double",
+          "description": "Get another guest to clink glasses with you and say 'Cheers to Santa.' You may not drink until they also say 'Cheers to Santa', but you cannot tell them this.",
+          "reward": 18,
+          "time_limit": 20,
+          "difficulty": 4
+      },
+      {
+          "name": "Gift Wrap Waddle",
+          "description": "Wrap yourself in a scarf, blanket, or jacket and waddle around like a gift until someone 'unwraps' you.",
+          "reward": 15,
+          "time_limit": 10,
+          "difficulty": 3
+      },
+      {
+          "name": "Merry Mimic",
+          "description": "Copy someone’s movements or gestures until they notice.",
+          "reward": 12,
+          "time_limit": 10,
+          "difficulty": 3
+      }
     ]
 }

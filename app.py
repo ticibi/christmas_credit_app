@@ -9,6 +9,7 @@ DATA_FILE: str = "users.json"
 TASK_FILE: str = "tasks.json"
 CURSES_FILE: str = "curses.json"
 TRANSACTIONS_FILE: str = "transactions.json"
+CURES_FILE: str = "cures.json"
 
 st.set_page_config(page_title=TITLE, page_icon="🎄", layout="wide")
 
@@ -36,6 +37,9 @@ if "tasks" not in st.session_state:
 
 if "curses" not in st.session_state:
     st.session_state["curses"] = load(CURSES_FILE)
+
+if "cures" not in st.session_state:
+    st.session_state["cures"] = load(CURES_FILE)
 
 # Centralized rolling logic
 def roll_event(curse_chance=0.2):
@@ -116,7 +120,7 @@ else:
             time.sleep(2)
             st.rerun()
         elif st.button("Re-roll Task"):
-            result = roll_event(curse_chance=0.2)
+            result = roll_event(curse_chance=0.25)
             current_user["stats"]["tasks_rerolled"] += 1 #stats
             if result["type"] == "curse":
                 current_user["stats"]["curses_received"] += 1 #stats
@@ -125,6 +129,9 @@ else:
                 st.error(f"🔮 You've been cursed: {result['event']['name']}")
                 with st.expander("Curse Details", expanded=True):
                     st.write(result['event']['curse'])
+                    cure = random.choice(st.session_state["cures"])
+                    st.write(f"**Cure:** {cure}")
+                    current_user["curse"]["cure"] = cure
             else:
                 current_user["stats"]["tasks_received"] += 1 #stats
                 current_user["task"] = result["event"]
@@ -139,6 +146,7 @@ else:
         st.error(f"🔮 Active Curse: {current_user['curse']['name']}")
         with st.expander("Curse Details", expanded=True):
             st.write(current_user['curse']['curse'])
+            st.write(f"**Cure:** {current_user['curse']['cure']['name']}")
         if st.button("Break Curse"):
             current_user["stats"]["curses_broken"] += 1 #stats
             del current_user["curse"]

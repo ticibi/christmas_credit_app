@@ -1,12 +1,12 @@
 {
     "tcb": {
-        "balance": 3,
+        "balance": 55,
         "stats": {
-            "tasks_received": 0,
-            "tasks_completed": 0,
-            "tasks_rerolled": 0,
-            "curses_received": 0,
-            "curses_broken": 0
+            "tasks_received": 145,
+            "tasks_completed": 10,
+            "tasks_rerolled": 140,
+            "curses_received": 26,
+            "curses_broken": 26
         }
     },
     "santaadmin": {
